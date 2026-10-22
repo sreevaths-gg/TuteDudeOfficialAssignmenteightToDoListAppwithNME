@@ -1,0 +1,162 @@
+{
+  "info": {
+    "_postman_id": "700e4c1f-8dc4-461a-aaef-3935348ed8df",
+    "name": "To-Do-List-App-with-NME",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "27873411",
+    "_collection_link": "https://go.postman.co/collection/27873411-700e4c1f-8dc4-461a-aaef-3935348ed8df?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "Add API",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n       \r\n        \"title\": \"Learn NDSME\",\r\n        \"description\": \"Learn NDSME\",\r\n        \"status\": \"pending\"\r\n    }",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:5000/api/toDoListApi",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5000",
+          "path": [
+            "api",
+            "toDoListApi"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "List API",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:5000/api/toDoListApi",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5000",
+          "path": [
+            "api",
+            "toDoListApi"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Update Status",
+      "request": {
+        "method": "PATCH",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"status\": \"completed\"\r\n}\r\n",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:5000/api/toDoListApi/6ad98e9e8614624f52c2cb4c/status",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5000",
+          "path": [
+            "api",
+            "toDoListApi",
+            "6ad98e9e8614624f52c2cb4c",
+            "status"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Edit API",
+      "request": {
+        "method": "PUT",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "\r\n    {\r\n        \"_id\": \"6ad98e9e8614624f52c2cb4c\",\r\n        \"title\": \"Learn Node\",\r\n        \"description\": \"Learn Node\",\r\n        \"status\": \"pending\"\r\n    }\r\n \r\n",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:5000/api/toDoListApi/6ad98e9e8614624f52c2cb4c",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5000",
+          "path": [
+            "api",
+            "toDoListApi",
+            "6ad98e9e8614624f52c2cb4c"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Delete API",
+      "request": {
+        "method": "DELETE",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:5000/api/toDoListApi/6ad9c6ee043ccaf92c698baf",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5000",
+          "path": [
+            "api",
+            "toDoListApi",
+            "6ad9c6ee043ccaf92c698baf"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Search API",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": ""
+        }
+      },
+      "response": []
+    }
+  ]
+}
